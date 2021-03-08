@@ -1,21 +1,10 @@
 Release Notes :
 
-v1.0.1
-    - Initial Release.
-
-    - SDK Versions :
-        - Facebook SDK v8.0.0
-        - Game Analytics SDK v6.3.1
-        - Tenjin SDK 1.9.2
-
 v1.0.0
-    - Initial Release.
-
     - SDK Versions :
-        - Facebook SDK v7.21.1
-        - Game Analytics SDK v6.3.0
+        - Facebook SDK v9.0.0
+        - Game Analytics SDK v6.4.1
         - Tenjin SDK 1.9.2
-
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
