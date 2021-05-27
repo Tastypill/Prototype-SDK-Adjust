@@ -1,10 +1,14 @@
 Release Notes :
 
 v1.0.0
+    - Initial Release.
+
     - SDK Versions :
-        - Facebook SDK v9.0.0
-        - Game Analytics SDK v6.4.1
-        - Tenjin SDK 1.9.2
+        - Facebook SDK v9.2.0
+        - Game Analytics SDK v6.5.2
+        - Adjust SDK v4.29.1
+        - Adjust Purchase SDK v1.0.3
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -28,13 +32,17 @@ How to configure :
 
 4.  Enter Valid Keys to Facebook Settings and Press Apply Settings Button.
 
-5.  Enter Valid Tenjin SDK Key.
+5.  Enter Valid Adjust App Tokens for android and iOS.
 
-6.  Open First scene of game.
+6.  Go To "Assets ~> Adjust ~> Check iOS 14 Support Status". if disabled, please enable it by Selecting "Assets ~> Adjust ~> Toggle iOS 14 Support Status"
 
-7.  Go To Tastypill ~> SDK Manager ~> Create SDK Manager.
+7.  Go To "Assets ~> Adjust ~> Check Post Processing Status". if disabled, please enable it by Selecting "Assets ~> Adjust ~> Toggle Post Processing Status"
 
-8.  Setup Complete.
+8.  Open First scene of game.
+
+9.  Go To Tastypill ~> SDK Manager ~> Create SDK Manager.
+
+10.  Setup Complete.
 
 
 Game Analytics Additional Settings :
@@ -55,16 +63,18 @@ GameAnalytics need to pass Level Progression events manually. Please use SDKMana
     --------------------------------------------------------
     SDKManager.Instance.OnLevelFailEvent(int levelIndex);
     --------------------------------------------------------
+    
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Adjust Purchase SDK Reporting : 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Adjust Purchase SDK requires Unity IAP Sdk to be integrated within app. please follow below steps to configure and report
+IAPs to adjust.
 
-IAP Report to Tenjin :
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Incase you wish to report IAP to tenjin please follow below steps.
-
-1. Please confirm IAP SDK imported and configured correctly.
-2. On each successful IAP Purchase please call below method to report IAP Purchase to tenjin.
-
-    SDKManager.Instance.ReportIAPToTenjin(Product iapProduct);
-
-
+1.  Open SDK Manager Script and fill the "eventToken" values for all eventtoken. these event tokens can be grabbed from
+    Adjust's dashboard.
+    
+2.  Upon successful purchase of IAP please call below method.
+    SDKManager.Instance.ValidateIAP(Product product).   
+     
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
