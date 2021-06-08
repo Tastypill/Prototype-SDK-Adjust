@@ -5,7 +5,7 @@ v1.0.1
 
     - SDK Versions :
         - Facebook SDK v9.2.0
-        - Game Analytics SDK v6.5.2
+        - Game Analytics SDK v6.5.7
         - Adjust SDK v4.29.1
         - Adjust Purchase SDK v1.0.3
 
