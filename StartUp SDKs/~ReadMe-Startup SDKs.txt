@@ -2,6 +2,8 @@ Release Notes :
 
 v1.0.1
     - Initial Release.
+v1.0.2
+    - Fixed Build issues.
 
     - SDK Versions :
         - Facebook SDK v9.2.0
