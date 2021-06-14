@@ -75,8 +75,18 @@ IAPs to adjust.
 
 1.  Open SDK Manager Script and fill the "eventToken" values for all eventtoken. these event tokens can be grabbed from
     Adjust's dashboard.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enable Apple App Tracking
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
-2.  Upon successful purchase of IAP please call below method.
-    SDKManager.Instance.ValidateIAP(Product product).   
+1. Goto "AppLovin" Menu Item On Unity Editor and Select "Integration Manager"
+2. Navigate to "Privacy Settings".
+3. Check "Enable Consent Flow (iOS Only") toggle.
+4. Enter "https://tastypill.com/privacypolicy/" in Privacy Policy URL.
+5. Keep Terms of Service URL Empty as its optional.
+6. You can edit Description and localization content if you wish.
      
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
