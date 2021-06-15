@@ -10,11 +10,12 @@ v1.0.2
         - Game Analytics SDK v6.5.7
         - Adjust SDK v4.29.1
         - Adjust Purchase SDK v1.0.3
+        - ATT Enabled Using AppLovin Max SDK
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-NOTE :  This SDK Mannager Module Also supports GDPR Consent SDK. Incase you're not using GDPR Consent SDK or not requires,
+NOTE :  This SDK Manager Module Also supports GDPR Consent SDK. Incase you're not using GDPR Consent SDK or not requires,
         You do not need to take any action.  The build-in editor code will handle these automatically.
 
         Once you add GDPR Consent SDK, SDKManager will Initialize after consent verification. SDKManager code has already
@@ -79,7 +80,7 @@ IAPs to adjust.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Enable Apple App Tracking
+Enable Apple App Tracking Using AppLovin Max
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
 1. Goto "AppLovin" Menu Item On Unity Editor and Select "Integration Manager"
