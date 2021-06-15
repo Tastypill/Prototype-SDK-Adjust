@@ -82,12 +82,14 @@ IAPs to adjust.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Enable Apple App Tracking Using AppLovin Max
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    
-1. Goto "AppLovin" Menu Item On Unity Editor and Select "Integration Manager"
-2. Navigate to "Privacy Settings".
-3. Check "Enable Consent Flow (iOS Only") toggle.
-4. Enter "https://tastypill.com/privacypolicy/" in Privacy Policy URL.
-5. Keep Terms of Service URL Empty as its optional.
-6. You can edit Description and localization content if you wish.
-     
+1. Install AppLovin Max SDK for unity.    
+2. Goto "AppLovin" Menu Item On Unity Editor and Select "Integration Manager"
+3. Navigate to "Privacy Settings".
+4. Check "Enable Consent Flow (iOS Only") toggle.
+5. Enter "https://tastypill.com/privacypolicy/" in Privacy Policy URL.
+6. Keep Terms of Service URL Empty as its optional.
+7. You can edit Description and localization content if you wish.
+8. Open SDKManager.cs 
+9. Look for "InitializeApplovin" method and Uncomment code inside it.
+10. ATT prompt should be showing upon app launch now on iOS devices 14.5 or above.     
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
