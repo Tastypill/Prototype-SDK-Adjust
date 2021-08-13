@@ -11,7 +11,18 @@ v1.0.2
         - Adjust SDK v4.29.1
         - Adjust Purchase SDK v1.0.3
         - ATT Enabled Using AppLovin Max SDK
-
+        
+v1.0.3
+    - Fixed Build issues.
+    - Game Analytics Ad Revenue Tracking Enabled.
+    - Game Analytics IAP Reporting Integrated.
+    
+    - SDK Versions :
+        - Facebook SDK v11.0.0
+        - Game Analytics SDK v6.6.4
+        - Adjust SDK v4.29.2
+        - Adjust Purchase SDK v1.0.3
+        - ATT Enabled Using AppLovin Max SDK
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -68,8 +79,24 @@ GameAnalytics need to pass Level Progression events manually. Please use SDKMana
     --------------------------------------------------------
     
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Adjust Purchase SDK Reporting : 
+IAP Purchase Reporting to Adjust and Game Analytics.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Integrate IAP Purchase SDK and Configure purchases as per the requirements.
+
+2. On Purchase Successful. Call below method to report and track IAP with adjust and Game Analytics.
+
+3. To Validate and Report IAP to Adjust please call below method.
+
+    ------------------------------------------------
+    SDKManager.Instance.ValidateIAP(Product product);
+    ------------------------------------------------
+
+4.  To Validate and Report IAP to Game Analytics please call below method.
+   
+     ----------------------------------------------------------------------------
+     SDKManager.Instance.ReportIAPToGameAnalyticsWithValidation(Product product);
+     ----------------------------------------------------------------------------
 
 Adjust Purchase SDK requires Unity IAP Sdk to be integrated within app. please follow below steps to configure and report
 IAPs to adjust.
@@ -77,8 +104,13 @@ IAPs to adjust.
 1.  Open SDK Manager Script and fill the "eventToken" values for all eventtoken. these event tokens can be grabbed from
     Adjust's dashboard.
 
+2. Integrate IAP Purchase SDK and Configure purchases as per the requirements.
 
+3. On Purchase Successful. Call below method to report and track IAP with adjust.
 
+    -------------------------------------------------
+    SDKManager.Instance.ValidateIAP(Product product);
+    -------------------------------------------------
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Enable Apple App Tracking Using AppLovin Max
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
