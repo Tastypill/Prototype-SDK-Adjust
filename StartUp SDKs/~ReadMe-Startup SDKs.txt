@@ -24,6 +24,16 @@ v1.0.3
         - Adjust Purchase SDK v1.0.3
         - ATT Enabled Using AppLovin Max SDK
 
+v1.0.4
+    - Fixed Build issues.
+    - Game Analytics Ad Revenue Tracking Enabled.
+    - Game Analytics IAP Reporting Integrated.
+    
+    - SDK Versions :
+        - Facebook SDK v11.0.0
+        - Game Analytics SDK v7.3.17
+        - Adjust SDK v4.29.5
+        - Adjust Purchase SDK v1.0.3
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 NOTE :  This SDK Manager Module Also supports GDPR Consent SDK. Incase you're not using GDPR Consent SDK or not requires,
